@@ -1,0 +1,5 @@
+services:
+  my-server:
+    build: . # Docker File로 만들어진 이미지로 띄운다
+    ports:
+      - 8080:8080
