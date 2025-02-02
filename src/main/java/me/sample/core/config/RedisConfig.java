@@ -1,4 +1,4 @@
-package me.sample.core.sample;
+package me.sample.core.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

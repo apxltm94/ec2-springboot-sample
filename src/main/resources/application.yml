@@ -2,11 +2,19 @@ server:
   port: 8080
 
 spring:
+  profiles:
+    default: local
   datasource:
     url: jdbc:mysql://my-db:3306/mydb
+#    url: jdbc:mysql://localhost:3306/mydb
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+      ddl-auto: update
+    show-sql: true
   data:
     redis:
       host: my-cache-server
