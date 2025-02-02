@@ -1,6 +1,8 @@
 services:
   my-server:
-    build: . # Docker File로 만들어진 이미지로 띄운다
+    build:
+      context: .
+      dockerfile: Dockerfile.dev # Docker File로 만들어진 이미지로 띄운다
     ports:
       - 8080:8080
     depends_on: # 서비스가 먼저 띄워진 후 다음 서비스 실행
@@ -17,7 +19,7 @@ services:
     volumes:
       - ./mysql_data:/var/lib/mysql
     ports:
-      - 3307:3306
+      - 3306:3306
     healthcheck:
       test: [ "CMD", "mysqladmin", "ping" ]
       interval: 5s
