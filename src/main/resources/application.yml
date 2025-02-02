@@ -1,0 +1,61 @@
+spring:
+  profiles:
+    default: local
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: local
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: health
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  datasource:
+    url: jdbc:mysql://my-db:3306/mydb
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  data:
+    redis:
+      host: my-cache-server
+      port: 6379
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: health

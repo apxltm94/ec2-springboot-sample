@@ -11,9 +11,11 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import java.time.LocalDateTime;
+import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;
 
 @Entity
+@Getter
 @Table(name = "boards")
 public class Board {
 
