@@ -5,8 +5,7 @@ spring:
   profiles:
     default: local
   datasource:
-    url: jdbc:mysql://my-db:3306/mydb
-#    url: jdbc:mysql://localhost:3306/mydb
+    url: jdbc:mysql://localhost:3306/mydb
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -17,7 +16,7 @@ spring:
     show-sql: true
   data:
     redis:
-      host: my-cache-server
+      host: 127.0.0.1
       port: 6379
 
 management:
