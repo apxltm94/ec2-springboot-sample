@@ -46,4 +46,24 @@ spring:
     url: jdbc:mysql://redis-sample-db.cyr8sbmjsowa.ap-northeast-2.rds.amazonaws.com:3306/mydb
     username: admin
     password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: health
+
+logging:
+  level:
+    org.springframework.cache: trace
   # 하위 내용에 대해 작성하지 않아도 기본적으로 copy 된다.
