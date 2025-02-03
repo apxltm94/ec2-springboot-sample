@@ -52,14 +52,5 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-
-  data:
-    redis:
-      host: my-cache-server
-      port: 6379
-
-management:
-  endpoint:
-    web:
-      exposure:
-        include: health
+    
+  # 하위 내용에 대해 작성하지 않아도 기본적으로 copy 된다.
