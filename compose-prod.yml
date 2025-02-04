@@ -14,7 +14,7 @@ services:
   my-db:
     image: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: mydb
     volumes:
       - ./mysql_data:/var/lib/mysql
