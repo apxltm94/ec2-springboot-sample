@@ -1,4 +1,4 @@
-package me.sample.core.config;
+package me.sample.myapp.core.config;
 
 import java.time.Duration;
 import org.springframework.cache.CacheManager;

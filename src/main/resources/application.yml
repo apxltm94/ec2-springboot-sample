@@ -55,7 +55,6 @@ spring:
   data:
     redis:
       host: 43.201.98.176 # TODO: 탄력적 IP 셋팅하면 나중에 변경해야함
-#      host: localhost
       port: 6379
 
 management:

@@ -1,4 +1,4 @@
-package me.sample.core.api.controller;
+package me.sample.myapp.api.sample;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

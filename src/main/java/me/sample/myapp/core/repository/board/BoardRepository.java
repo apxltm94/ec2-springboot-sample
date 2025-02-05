@@ -1,5 +1,6 @@
-package me.sample.core.domain;
+package me.sample.myapp.core.repository.board;
 
+import me.sample.myapp.core.domain.board.model.Board;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

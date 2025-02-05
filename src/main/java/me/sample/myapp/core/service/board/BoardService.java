@@ -1,10 +1,10 @@
-package me.sample.core.api.service;
+package me.sample.myapp.core.service.board;
 
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import me.sample.core.domain.Board;
-import me.sample.core.domain.BoardRepository;
+import me.sample.myapp.core.domain.board.model.Board;
+import me.sample.myapp.core.repository.board.BoardRepository;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
