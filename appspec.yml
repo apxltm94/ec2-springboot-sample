@@ -2,8 +2,7 @@
 version: 0.0
 os: linux
 files:
-  #  - source:  /
-  - source:  /root/testpj1/ec2-springboot-sample
+  - source:  /
     destination: /home/ec2-user/cicd-test
     overwrite: yes
 
